@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ticket_profilepage">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="412dp"
+        android:layout_height="270dp"
+        android:background="#ea5455"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: Jagadesh"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: js4656@gmail.com"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile:5464641631"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P r o f i l e"
+        android:textColor="#000"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your booking:"
+        android:textColor="#000"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:id="@+id/mname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="movie name:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <TextView
+        android:id="@+id/mseatno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat no:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <TextView
+        android:id="@+id/mmovietime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="movie time:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <TextView
+        android:id="@+id/mticketrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ticket rate:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ticketbooking"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toStartOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="407dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFE40E62"
+            android:gravity="center"
+            android:text="  booking Form"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.122" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/batman_dark" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="384dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#ACA1A1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MovieName:         "
+            android:textSize="20dp"
+            android:id="@+id/userAlert"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="#5676"
+            android:hint="Enter Your moviename.."
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:id="@+id/userPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="#5676"
+            android:hint="Enter Your Password.."
+            android:layout_marginLeft="13dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seat no:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:id="@+id/userContact"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="#5676"
+            android:hint="Enter Your Contact No.."
+            android:layout_marginLeft="32dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35dp"
+            android:gravity="center"
+            android:text="movie date            "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:ems="10"
+            android:hint="DD/MM/YYYY" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="food"
+            android:layout_marginRight="53dp"
+            android:layout_marginLeft="5dp"/>
+        <CheckBox
+            android:id="@+id/running"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="coke"
+            android:textSize="20dp"/>
+        <CheckBox
+            android:id="@+id/jumping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="popcorn"
+            android:textSize="20dp"/>
+        <CheckBox
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pizza"
+            android:textSize="20dp"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="show time"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <Spinner
+            android:id="@+id/SpGames"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38dp"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="ticket rate "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/useraddress"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:hint="ticket rate"
+            android:layout_marginLeft="15dp"
+            android:background="#5676"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#B71C1C"
+        android:text="Click To Submit"
+        android:textColor="#F5FBF6" />
+    <Button
+        android:id="@+id/btnSubmit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#B71C1C"
+        android:text="pay"
+        android:textColor="#F5FBF6" />
+
+</LinearLayout>
